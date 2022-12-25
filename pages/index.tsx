@@ -3,12 +3,11 @@ import Head from "next/head";
 import { homeDoc } from "../constants/documentTitle";
 import { PreviewSuspense } from "next-sanity/preview";
 import { lazy } from "react";
-
 import { client } from "../lib/sanity.client";
 import { Author, AuthorQuery } from "../components/Document/AuthorDocument";
 
 const PreviewDocumentsCount = lazy(
-  () => import("../components/PreviewDocumentsCount")
+  () => import("../components/Document/PreviewDocumentsCount")
 );
 
 export const getStaticProps = async ({ preview = false }) => {
