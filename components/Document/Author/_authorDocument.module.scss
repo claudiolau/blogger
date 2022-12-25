@@ -1,0 +1,35 @@
+.container {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+}
+
+.container > .leftBlock {
+  text-align: left;
+  float: left;
+}
+
+.container > div {
+  padding: 4rem;
+}
+.header {
+  margin-bottom: 2rem;
+}
+
+.name {
+  color: #0f172a;
+  font-weight: 900;
+}
+
+.occupation {
+  color: #334155;
+  padding-bottom: 1rem;
+}
+
+.details {
+  width: fit-content;
+}

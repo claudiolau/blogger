@@ -4,7 +4,10 @@ import { homeDoc } from "../constants/documentTitle";
 import { PreviewSuspense } from "next-sanity/preview";
 import { lazy } from "react";
 import { client } from "../lib/sanity.client";
-import { Author, AuthorQuery } from "../components/Document/AuthorDocument";
+import {
+  AuthorDocument,
+  AuthorQuery,
+} from "../components/Document/Author/AuthorDocument";
 
 const PreviewDocumentsCount = lazy(
   () => import("../components/Document/PreviewDocumentsCount")
@@ -36,7 +39,7 @@ export default function Home({ preview, data }: any) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Author data={data} />
+      <AuthorDocument data={data} />
     </>
   );
 }

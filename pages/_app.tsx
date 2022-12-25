@@ -1,12 +1,8 @@
-import "../styles/globals.scss";
-import type { AppProps } from "next/app";
-import { Navbar } from "../components/Navbar/Navbar";
 import React from "react";
-import { IBM_Plex_Mono } from "@next/font/google";
-
-const inter = IBM_Plex_Mono({
-  weight: "100",
-});
+import type { AppProps } from "next/app";
+import { Font } from "../assets";
+import "../styles/globals.scss";
+import { Navbar } from "../components/Navbar/Navbar";
 
 export default function App({
   Component,
@@ -14,7 +10,7 @@ export default function App({
 }: AppProps): React.ReactElement {
   return (
     <>
-      <div className={inter.className}>
+      <div className={Font.className}>
         <Navbar />
         <Component {...pageProps} />
       </div>
