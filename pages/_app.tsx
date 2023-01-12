@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { Font } from "../assets";
 import "../styles/globals.scss";
 import { Navbar } from "../components/Navbar/Navbar";
+import { Footer } from "../components/Footer";
 
 export default function App({
   Component,
@@ -13,6 +14,7 @@ export default function App({
       <div className={Font.className}>
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
       </div>
     </>
   );

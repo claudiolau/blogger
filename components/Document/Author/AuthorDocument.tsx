@@ -1,6 +1,8 @@
 import styles from "./_authorDocument.module.scss";
 import groq from "groq";
 import { Profile } from "../../../assets/Profile";
+import { Pill } from "../../Pill";
+import { pillofTags } from "../../Pill/constant";
 
 export const AuthorQuery = groq`*[_type == "author"]`;
 
@@ -17,9 +19,9 @@ export function AuthorDocument({ data }: any) {
           </div>
           <div className={styles.details}>
             <div>{authorData.description}</div>
-
             <div>{authorData.bio[0].children[0].text}</div>
           </div>
+          <Pill tag={pillofTags} />
         </div>
       </div>
     </>

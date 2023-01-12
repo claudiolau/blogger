@@ -14,7 +14,6 @@ export const Navbar: React.FC = () => {
           return (
             <li className={styles.navIcon} key={uuidv4()}>
               <Link href={mapHref}>{iconKey}</Link>
-              <div></div>
             </li>
           );
         })}

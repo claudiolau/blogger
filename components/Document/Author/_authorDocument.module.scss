@@ -1,11 +1,12 @@
 .container {
+  position: relative;
   width: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
-  max-height: 100vh;
+  height: 100%;
 }
 
 .container > .leftBlock {
@@ -32,4 +33,6 @@
 
 .details {
   width: fit-content;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
